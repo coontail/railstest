@@ -22,3 +22,8 @@ Dans tous les cas, il faut s'assurer que le container item soit le seul portant 
 Il nous faudrait alors une API REST très simple permettant de :
 - Créer des containers / container items
 - Récupérer, pour un container donné, un JSON de tous ses container items, et ses container enfants s'il en a.
+
+
+
+/!\ Il n'est pas nécessaire pour ce test de mettre en place une gestion des credentials / tokens /!\
+Un faux current_user est disponible en dur si besoin est, au niveau de l'ApplicationController
