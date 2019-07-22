@@ -31,3 +31,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rspec-rails'
 gem 'rspec-mocks'
 gem 'factory_bot_rails'
+gem 'faker'

@@ -1,24 +1,24 @@
-# README
+# TEST TECHNIQUE (RAILS)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ceci est une petite application rails.
+Plusieurs méthodes sont manquantes. Certains tests sont déjà écrits, et d'autres seront à écrire.
+Votre but étant que tous les tests RSpec passent sans problèmes.
 
-Things you may want to cover:
 
-* Ruby version
+1 - *Héritage*
 
-* System dependencies
+Les containers peuvent avoir un container parent. Dans le cas où ils n'en ont pas, ils sont considérés comme étant à la racine.
+Nous souhaitons de la façon la moins couteuse possible, récupérer pour un container *enfant* la collection de ses ancètres, et inversement, pour un container parent, la collection de tous ses enfants.  
 
-* Configuration
 
-* Database creation
+2 - *Copie et déplacement*
 
-* Database initialization
+Les containers peuvent avoir n container items. Chaque item pouvant être copié ou déplacé dans un autre container.
+Dans tous les cas, il faut s'assurer que le container item soit le seul portant son nom au sein de son container.
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+3 - *API*
 
-* Deployment instructions
-
-* ...
+Il nous faudrait alors une API REST très simple permettant de :
+- Créer des containers / container items
+- Récupérer, pour un container donné, un JSON de tous ses container items, et ses container enfants s'il en a.
